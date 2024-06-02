@@ -1,3 +1,12 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 .img-1 {
     top: 100px;
     left: 1058px;
@@ -27,6 +36,11 @@ button {
     border-radius: 2px;
     text-transform: capitalize;
     padding: 10px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-out;
 }
 
 .smaller {
@@ -130,7 +144,7 @@ button {
     border: 0px;
     transition: all 0.2s ease-in-out;
     box-sizing: border-box;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     flex: 1 1 0;
 }
 
@@ -303,9 +317,9 @@ footer {
 @media (max-width: 786px) {
     #first-img {
         max-height: 400px;
-        display: flex;
-        justify-content: center;
-        width: 100vw;
+        display: block;
+        margin: auto;
+        width: 70vw;
     }
     .order-1 {
         height: 120vh;
@@ -313,4 +327,20 @@ footer {
     .first-text {
         text-align: center;
     }
+}
+@media (max-width: 576px) {
+    .choose {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .choose h5 {
+        margin-top: 5px;
+        margin-bottom: 3px;
+    }
+}
+
+@media (max-width: 1042) {
+    /* .flip-card-back h3, .flip-card-back a, .flip-card-back p {
+        display: none;
+    } */
 }
