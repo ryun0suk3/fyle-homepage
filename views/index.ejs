@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fyle | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/js/slider.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Fyle</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#best">Why We Are Best</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#why-choose">Why Choose Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#growth">Growth</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#feedback">Feedback</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <section class="order-1 w-100" id="home">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="row mt-md-5">
+                    <div class="col-md-6 mt-5 first-text">
+                        <h3 class="mt-5 mb-3 red-text text-uppercase">Award winning</h3>
+                        <h1 class="text-uppercase">Digital Marketing Agency</h1>
+                        <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta amet omnis nostrum! Hic, deserunt suscipit aliquid quo blanditiis officiis, odio tempore sequi eum fuga libero maxime eveniet doloribus corporis fugiat!</p>
+                        <button type="button" class="px-4 mt-3" data-bs-toggle="modal" data-bs-target="#popup">
+                            Contact Us
+                          </button>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/images/hero.jpeg" class="img-1" alt="" id="first-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+
+  <div class="modal fade" id="popup" tabindex="-1" aria-labelledby="popupFormLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 main-h1 poppins-medium" id="popupFormLabel">Talk To Us</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+            <form action="https://getform.io/f/qalonpzb" method="POST" id="popupForm">
+
+                <div class="input-box underline">
+                    <input type="text" placeholder="Work Email*" name="email" required>
+                    <div class="underline"></div>
+                  </div>
+
+                  <div class="row pb-5">
+                    <div class="col-6">
+                        <div class="input-box underline">
+                            <input type="text" placeholder="First Name*" name="firstName" required>
+                            <div class="underline"></div>
+                          </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input-box underline">
+                            <input type="text" placeholder="Last Name*" name="lastName" required>
+                            <div class="underline"></div>
+                          </div>
+                    </div>
+                  </div>
+
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" name="check" id="exampleCheck1" required>
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>
+
+                  <button type="submit" class="w-100 px-2">Contact Us</button>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<section class="order-2 grey w-100" id="best">   
+    <h3 class="pad-top red-text text-uppercase text-center">our projects</h3>
+    <h1 class="text-uppercase mt-3 mb-5 text-center">Why we are best</h1>
+  <div id="cardsContainer">
+    <div class="cards">
+        <div class="slide-card px-3" id="card1">
+            <div class="flip-card-inner">
+                <div class="flip-card-front"><img src="/images/1.jpeg" alt="Image 1" id="flip-img"></div>
+                <div class="flip-card-back d-flex flex-column">
+                        <img src="/images/icon.svg" alt="" class="text-center pt-1">
+                        <h3 class="poppins-thin text-center text-white my-3">WEB DEVELOPMENT</h3>
+                        <p class="text-white text-center poppins-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <a class="text-center" href="https://fylehq.com">
+                           <button type="button" class="flip-button poppins-medium text-uppercase">Read More <img src="/images/arrow.svg" alt=""></button>
+                        </a>
+                </div>
+            </div>
+        </div>
+        <div class="slide-card px-3" id="card2">
+            <div class="flip-card-inner">
+                <div class="flip-card-front"><img src="/images/2.jpeg" alt="Image 2"></div>
+                <div class="flip-card-back d-flex flex-column">
+                     <img src="/images/icon.svg" alt="" class="text-center pt-1">
+                        <h3 class="poppins-thin text-center text-white my-3">WEB DEVELOPMENT</h3>
+                        <p class="text-white text-center poppins-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <a class="text-center" href="https://fylehq.com">
+                           <button type="button" class="flip-button poppins-medium text-uppercase">Read More <img src="/images/arrow.svg" alt=""></button>
+                        </a>
+                </div>
+            </div>
+        </div>
+        <div class="slide-card px-3" id="card3">
+            <div class="flip-card-inner">
+                <div class="flip-card-front"><img src="/images/3.jpeg" alt="Image 3"></div>
+                <div class="flip-card-back d-flex flex-column">
+                     <img src="/images/icon.svg" alt="" class="text-center pt-1">
+                        <h3 class="poppins-thin text-center text-white my-3">WEB DEVELOPMENT</h3>
+                        <p class="text-white text-center poppins-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <a class="text-center" href="https://fylehq.com">
+                           <button type="button" class="flip-button poppins-medium text-uppercase">Read More <img src="/images/arrow.svg" alt=""></button>
+                        </a>
+                </div>
+            </div>
+        </div>
+        <div class="slide-card px-3" id="card4">
+            <div class="flip-card-inner">
+                <div class="flip-card-front"><img src="/images/2.jpeg" alt="Image 4"></div>
+                <div class="flip-card-back d-flex flex-column">
+                     <img src="/images/icon.svg" alt="" class="text-center pt-1">
+                        <h3 class="poppins-thin text-center text-white my-3">WEB DEVELOPMENT</h3>
+                        <p class="text-white text-center poppins-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <a class="text-center" href="https://fylehq.com">
+                           <button type="button" class="flip-button poppins-medium text-uppercase">Read More <img src="/images/arrow.svg" alt=""></button>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="buttonContainer" class="ps-5 pad-bot">
+    <img class="cardButton active" data-target="1" src="">
+    <img class="cardButton" data-target="2" src="">
+    <img class="cardButton" data-target="3" src="">
+    <img class="cardButton" data-target="4" src="">
+</div>
+
+<!-- <div class="buttonContainer">
+    <div class="cardButton active" data-target="1"></div>
+    <div class="cardButton" data-target="2"></div>
+    <div class="cardButton" data-target="3"></div>
+    <div class="cardButton" data-target="4"></div>
+</div> -->
+
+</section>
+
+  
+
+
+
+    
+    <section class="order-3 w-100" id="why-choose">
+        <h3 class="pad-top red-text text-uppercase text-center">Why choose us</h3>
+        <h1 class="text-uppercase mt-3 mb-5 text-center">Why we are the best</h1>
+        <div class="row mb-5">
+            <div class="col-md-8 offset-md-2">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="/images/1.svg" alt="" class="svg mb-3 img-fluid">
+                        <h5 class="poppins-medium mb-4 smaller" >Clarified Vision and Target</h5>
+                        <p class="poppins-light" >Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                    <div class="col-3">
+                        <img src="/images/2.svg" alt="" class="svg mb-3 img-fluid">
+                        <h5 class="poppins-medium mb-4 smaller" >High Performance</h5>
+                        <p class="poppins-light" >Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                    <div class="col-3">
+                        <img src="/images/3.svg" alt="" class="svg mb-3 img-fluid">
+                        <h5 class="poppins-medium mb-4 smaller" >Maintain Security</h5>
+                        <p class="poppins-light" >Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                    <div class="col-3">
+                        <img src="/images/4.svg" alt="" class="svg mb-3 img-fluid">
+                        <h5 class="poppins-medium mb-4 smaller" >Better Strategy and Quality</h5>
+                        <p class="poppins-light" >Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="order-4 w-100" id="projects">   
+        <h3 class="pad-top red-text text-uppercase text-center">our projects</h3>
+        <h1 class="text-uppercase mt-3 mb-5 text-center">Why we are best</h1>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="row mb-5">
+                        <div class="col-8 d-flex flex-column">
+                            <img src="/images/image.jpeg" class="w-100 h-100 img-sec-3 img-fluid" id="main-image" alt="">
+                        </div>
+                        <div class="col-4 d-flex flex-column">
+                            <div class="card card-grey flex-grow-1" data-img-src="/images/image.jpeg">
+                                <h4 class="poppins-medium text-center mt-3">Project Title</h4>
+                                <p class="poppins-light mx-4 mt-2">These are the details about this amazing project.</p>
+                            </div>
+                            <div class="card card-red flex-grow-1" data-img-src="/images/proj2.jpg">
+                                <h4 class="poppins-medium text-center mt-3">Project Title</h4>
+                                <p class="poppins-light mx-4 mt-2">These are the details about this amazing project.</p>
+                            </div>
+                            <div class="card card-grey flex-grow-1" data-img-src="/images/proj.jpg">
+                                <h4 class="poppins-medium text-center mt-3">Project Title</h4>
+                                <p class="poppins-light mx-4 mt-2">These are the details about this amazing project.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-100 grey" id="growth">
+        <h3 class="red-text text-uppercase text-center pad-top">Experts Growth</h3>
+        <h1 class="text-uppercase mt-3 mb-5 text-center">Our Company Growth</h1>
+        <div class="row">
+            <div class="col-md-8 offset-md-2 d-flex flex-row pad-bot">
+                <div class="growth-card px-md-2 py-3 text-center">
+                    <img src="/images/heart.svg" alt="" class="mt-3 img-fluid">
+                    <h1 class="poppins-light my-3">199+</h1>
+                    <hp class="poppins-light">Satisfied customers</hp>
+                </div>
+                <div class="growth-card px-2 py-3 text-center">
+                    <img src="/images/clock.svg" alt="" class="mt-3 img-fluid">
+                    <h1 class="poppins-light my-3">1591+</h1>
+                    <hp class="poppins-light">Days Of Operation</hp>
+                </div>
+                <div class="growth-card px-2 py-3 text-center">
+                    <img src="/images/check.svg" alt="" class="mt-3 img-fluid">
+                    <h1 class="poppins-light my-3">283+</h1>
+                    <hp class="poppins-light">Complete Projects</hp>
+                </div>
+                <div class="growth-card px-2 py-3 me-s-2 text-center">
+                    <img src="/images/trophy.svg" alt="" class="mt-3 img-fluid">
+                    <h1 class="poppins-light my-3">75+</h1>
+                    <p class="poppins-light">Awards Won</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-100 client-feedback" id="feedback"> 
+        <h3 class="red-text text-uppercase text-center pad-top">Client Feedback</h3>
+        <h1 class="text-uppercase mt-3 mb-5 text-center">What people say about us!</h1>
+        <div class="container pad-bot">
+            <div class="row justify-content-center">
+                <div class="col-md-8 position-relative">
+                    <!-- <img src="/images/quotemarks-left.svg" alt="Quote Mark" class="quote-mark"> -->
+                    <p class="m3-5 review pt-3 px-4 poppins-light">
+                        Fyle has made it very convenient for us to see our expenses as soon as employees swipe their cards. We get to know almost right away when employees have missed a receipt with the real-time card feeds, instead of waiting for the bank statement to be uploaded at the end of the week.
+                    </p>
+                    <h5 class="font-weight-bold mt-3 px-4 red-text poppins-medium">Emma Riehlman
+                        <small class="text-body-secondary poppins-thin text-uppercase"> - Accounts payable</small>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="/images/group-500.png" alt="" class="img-fluid">
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

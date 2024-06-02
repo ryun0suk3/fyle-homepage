@@ -1,0 +1,316 @@
+.img-1 {
+    top: 100px;
+    left: 1058px;
+    width: 487px;
+    max-height: 640px;
+    transform: scale(0.9);
+}
+
+.navbar-nav li a, .navbar-brand {
+    color: #FF3147;
+    background-image: none;
+}
+
+.red-text {
+    color: #FF3147;
+    font-weight: 300;
+}
+
+.grey {
+    background-color: #FAFAFA;
+}
+
+button {
+    background-color: #FF3147;
+    color: white;
+    border: 0px;
+    border-radius: 2px;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+.smaller {
+    font-size: 16px;
+}
+
+.main-h1 {
+    font-size: 70px;
+}
+
+.input-box{
+    width: 100%;
+    height: 45px;
+    margin-top: 25px;
+    position: relative;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 16px;
+    border: none;
+}
+.underline::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    bottom: 0;
+}
+.underline::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, #FF3147 0%, #FF3147 100%);
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease;
+}
+.input-box input:focus ~ .underline::after,
+   .input-box input:valid ~ .underline::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.form-check-input[type='checkbox']:before {
+    border-color: red;
+    box-shadow: none;
+}
+
+
+.form-check-input[type='checkbox']:checked {
+    background-color: red;
+    border-color: red;
+    box-shadow: none;
+}
+
+  .form-check-input[type='checkbox']:not(:checked) {
+    border-color: red;
+    box-shadow: none;
+}
+    
+.svg {
+    width: 61px;
+    height: 72px;
+}
+
+.card {
+    border: 0px;
+    border-radius: 0px;
+    height: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img-sec-3 {
+    object-fit: cover; 
+}
+
+.card-red {
+    background-color: #FF3147;
+    color: white;
+}
+
+.card-grey {
+    background-color: #F6F6F6;
+}
+
+.mh {
+    max-height: 525px;
+}
+
+.growth-card {
+    background-color: white;
+    border: 0px;
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+    margin-left: 30px;
+    flex: 1 1 0;
+}
+
+.growth-card:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+}
+
+
+.review {
+    background-image: url("/images/quotemarks-left.svg");
+    background-repeat: no-repeat;
+}
+
+.pad-top {
+    padding-top: 75px;
+}
+
+.pad-bot {
+    padding-bottom: 75px;
+}
+
+footer {
+    background-color: #FF3147;
+    height: 300px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#cardsContainer {
+    width: 100%;
+    overflow: hidden;
+}
+  
+.cards {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: auto;
+  }
+
+.slide-card {
+    /*   background-color: transparent; */
+    width: 300px;
+    height: 400px;
+    flex: 0 0 25%; 
+    overflow: hidden;
+    transition: flex 0.3s ease;
+    /*   perspective: 1000px; */
+    }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    object-fit: cover;
+  }
+  
+  .slide-card:focus {
+      outline: 0;
+  }
+  
+  .slide-card:hover .flip-card-inner,
+  .slide-card:focus .flip-card-inner{
+    -webkit-transform: rotateY(180.5deg);
+    -moz-transform: rotateY(180.5deg);
+    transform: rotateY(180.5deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; 
+    -moz-backface-visibility: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    min-width: 100%;
+    cursor: pointer;
+  }
+
+  .flip-card-front img {
+    width: 100%;
+    height: auto;
+}
+  
+  .flip-card-front {
+    z-index: 2;
+    /* -webkit-transform: translateZ(1px); */
+
+  }
+
+  .flipcard-inner:hover {
+    pointer-events: none;
+}
+.flipcard-back:hover {
+    pointer-events: auto;
+}
+  
+.flip-card-back {
+    background-color: #FF3147;
+    color: white;
+    transform: rotateY(180deg);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    object-fit: cover; 
+    pointer-events: auto;
+    -webkit-transform: rotateY(180deg) translateZ(1px);
+
+}
+
+.flip-button {
+    background-color: white;
+    color: #FF3147;
+}
+
+#buttonContainer {
+    margin-top: 20px;
+}
+
+.cardButton {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    /* background-color: #ddd; */
+    cursor: pointer;
+    background-image: url("/images/inactive.svg");
+    background-repeat: no-repeat;
+}
+
+.cardButton.active {
+/* transform: scale(1.2); */
+    background-size: 20px 20px;
+    background-image: url("/images/active.svg");
+    background-repeat: no-repeat;
+    background-position: top 10px;
+    translate: -5px -5px;
+}
+
+
+@media (max-width: 786px) {
+    #first-img {
+        max-height: 400px;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+    .order-1 {
+        height: 120vh;
+    }
+    .first-text {
+        text-align: center;
+    }
+}
